@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanglaLLM Hub - Bangla AI Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-text">🇧🇩 BanglaLLM Hub</span>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="nav-link" onclick="scrollToSection('home')">
+                            <span class="en">Home</span>
+                            <span class="bn">হোম</span>
+                        </a></li>
+                        <li><a href="#projects" class="nav-link" onclick="scrollToSection('projects')">
+                            <span class="en">Projects</span>
+                            <span class="bn">প্রজেক্ট</span>
+                        </a></li>
+                        <li><a href="#features" class="nav-link" onclick="scrollToSection('features')">
+                            <span class="en">Features</span>
+                            <span class="bn">বৈশিষ্ট্য</span>
+                        </a></li>
+                        <li><a href="#contact" class="nav-link" onclick="scrollToSection('contact')">
+                            <span class="en">Contact</span>
+                            <span class="bn">যোগাযোগ</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('bn')">বাংলা</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="en">Free AI Platform for Bangla Language</span>
+                    <span class="bn">বাংলা ভাষার জন্য বিনামূল্যে এআই প্ল্যাটফর্ম</span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="en">Explore and access cutting-edge Bangla Language Models and AI tools</span>
+                    <span class="bn">অত্যাধুনিক বাংলা ভাষা মডেল এবং এআই টুলস অন্বেষণ করুন</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" onclick="scrollToSection('projects')">
+                        <span class="en">Explore Projects</span>
+                        <span class="bn">প্রজেক্ট দেখুন</span>
+                    </a>
+                    <a href="https://github.com/BanglaLLM" target="_blank" class="btn btn-secondary">
+                        <span class="en">Visit GitHub</span>
+                        <span class="bn">গিটহাব ভিজিট করুন</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="en">Our Projects</span>
+                <span class="bn">আমাদের প্রজেক্ট</span>
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="card-header">🤖</div>
+                    <h3 class="card-title">
+                        <span class="en">bangla-llama</span>
+                        <span class="bn">বাংলা-লামা</span>
+                    </h3>
+                    <p class="card-description">
+                        <span class="en">A New Bangla Large Language Model Based on Llama 2</span>
+                        <span class="bn">Llama 2 এর উপর ভিত্তি করে একটি নতুন বাংলা বড় ভাষা মডেল</span>
+                    </p>
+                    <a href="https://github.com/BanglaLLM/bangla-llama" target="_blank" class="card-link">
+                        <span class="en">Learn More →</span>
+                        <span class="bn">আরও জানুন →</span>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="card-header">📊</div>
+                    <h3 class="card-title">
+                        <span class="en">BanglaDataManager</span>
+                        <span class="bn">বাংলা ডেটা ম্যানেজার</span>
+                    </h3>
+                    <p class="card-description">
+                        <span class="en">Data management for Bangla LLM with validation and quality checks</span>
+                        <span class="bn">যাচাইকরণ এবং গুণমান পরীক্ষা সহ বাংলা এলএলএম এর জন্য ডেটা ব্যবস্থাপনা</span>
+                    </p>
+                    <a href="https://github.com/BanglaLLM/BanglaDataManager" target="_blank" class="card-link">
+                        <span class="en">Learn More →</span>
+                        <span class="bn">আরও জানুন →</span>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="card-header">📰</div>
+                    <h3 class="card-title">
+                        <span class="en">bd-newspaper-crawlers</span>
+                        <span class="bn">বাংলাদেশ সংবাদপত্র ক্রলার</span>
+                    </h3>
+                    <p class="card-description">
+                        <span class="en">Bangla newspaper and blog crawlers for NLP data mining</span>
+                        <span class="bn">এনএলপি ডেটা মাইনিং এর জন্য বাংলা সংবাদপত্র এবং ব্লগ ক্রলার</span>
+                    </p>
+                    <a href="https://github.com/BanglaLLM/bd-newspaper-crawlers" target="_blank" class="card-link">
+                        <span class="en">Learn More →</span>
+                        <span class="bn">আরও জানুন →</span>
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="card-header">🌐</div>
+                    <h3 class="card-title">
+                        <span class="en">Open-Translator</span>
+                        <span class="bn">উন্মুক্ত অনুবাদক</span>
+                    </h3>
+                    <p class="card-description">
+                        <span class="en">An Open Source Translation Agent for Bangla</span>
+                        <span class="bn">বাংলার জন্য একটি উন্মুক্ত উৎস অনুবাদ এজেন্ট</span>
+                    </p>
+                    <a href="https://github.com/BanglaLLM/Open-Translator" target="_blank" class="card-link">
+                        <span class="en">Learn More →</span>
+                        <span class="bn">আরও জানুন →</span>
+                    </a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="card-header">⚡</div>
+                    <h3 class="card-title">
+                        <span class="en">s1-bengali</span>
+                        <span class="bn">এস১-বাংলা</span>
+                    </h3>
+                    <p class="card-description">
+                        <span class="en">Simple test-time scaling for Bengali language models</span>
+                        <span class="bn">বাংলা ভাষা মডেলের জন্য সরল পরীক্ষা-সময় স্কেলিং</span>
+                    </p>
+                    <a href="https://github.com/BanglaLLM/s1-bengali" target="_blank" class="card-link">
+                        <span class="en">Learn More →</span>
+                        <span class="bn">আরও জানুন →</span>
+                    </a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="card-header">🎓</div>
+                    <h3 class="card-title">
+                        <span class="en">lm-evaluation-harness</span>
+                        <span class="bn">এলএম মূল্যায়ন হার্নেস</span>
+                    </h3>
+                    <p class="card-description">
+                        <span class="en">A framework for few-shot evaluation of language models</span>
+                        <span class="bn">ভাষা মডেলের কম-শট মূল্যায়নের জন্য একটি কাঠামো</span>
+                    </p>
+                    <a href="https://github.com/BanglaLLM/lm-evaluation-harness" target="_blank" class="card-link">
+                        <span class="en">Learn More →</span>
+                        <span class="bn">আরও জানুন →</span>
+                    </a>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <div class="card-header">📹</div>
+                    <h3 class="card-title">
+                        <span class="en">youtube_bangla</span>
+                        <span class="bn">ইউটিউব বাংলা</span>
+                    </h3>
+                    <p class="card-description">
+                        <span class="en">Q&A platform for YouTube videos in Bangla</span>
+                        <span class="bn">বাংলায় ইউটিউব ভিডিওর জন্য প্রশ্নোত্তর প্ল্যাটফর্ম</span>
+                    </p>
+                    <a href="https://github.com/BanglaLLM/youtube_bangla" target="_blank" class="card-link">
+                        <span class="en">Learn More →</span>
+                        <span class="bn">আরও জানুন →</span>
+                    </a>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card">
+                    <div class="card-header">👥</div>
+                    <h3 class="card-title">
+                        <span class="en">OpenMAIC</span>
+                        <span class="bn">ওপেনএমএআইসি</span>
+                    </h3>
+                    <p class="card-description">
+                        <span class="en">Open Multi-Agent Interactive Classroom</span>
+                        <span class="bn">উন্মুক্ত মাল্টি-এজেন্ট ইন্টারঅ্যাক্টিভ শ্রেণীকক্ষ</span>
+                    </p>
+                    <a href="https://github.com/BanglaLLM/OpenMAIC" target="_blank" class="card-link">
+                        <span class="en">Learn More →</span>
+                        <span class="bn">আরও জানুন →</span>
+                    </a>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card">
+                    <div class="card-header">🛡️</div>
+                    <h3 class="card-title">
+                        <span class="en">banglasafe</span>
+                        <span class="bn">বাংলা সেফ</span>
+                    </h3>
+                    <p class="card-description">
+                        <span class="en">Bengali LLM safety benchmark and evaluation</span>
+                        <span class="bn">বাংলা এলএলএম সুরক্ষা বেঞ্চমার্ক এবং মূল্যায়ন</span>
+                    </p>
+                    <a href="https://github.com/BanglaLLM/banglasafe" target="_blank" class="card-link">
+                        <span class="en">Learn More →</span>
+                        <span class="bn">আরও জানুন →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="en">Why Choose BanglaLLM Hub?</span>
+                <span class="bn">কেন BanglaLLM Hub বেছে নেবেন?</span>
+            </h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>
+                        <span class="en">Fast & Scalable</span>
+                        <span class="bn">দ্রুত এবং স্কেলেবল</span>
+                    </h3>
+                    <p>
+                        <span class="en">State-of-the-art Bangla language models optimized for performance</span>
+                        <span class="bn">কর্মক্ষমতার জন্য অপ্টিমাইজ করা অত্যাধুনিক বাংলা ভাষা মডেল</span>
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔓</div>
+                    <h3>
+                        <span class="en">Completely Free</span>
+                        <span class="bn">সম্পূর্ণ বিনামূল্যে</span>
+                    </h3>
+                    <p>
+                        <span class="en">Open source projects with no cost or hidden fees</span>
+                        <span class="bn">কোনো খরচ বা লুকানো ফি ছাড়াই উন্মুক্ত উৎস প্রকল্প</span>
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>
+                        <span class="en">Community Driven</span>
+                        <span class="bn">সম্প্রদায় চালিত</span>
+                    </h3>
+                    <p>
+                        <span class="en">Developed by and for the Bangla language community</span>
+                        <span class="bn">বাংলা ভাষা সম্প্রদায়ের দ্বারা এবং তাদের জন্য বিকশিত</span>
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>
+                        <span class="en">Rich Toolkit</span>
+                        <span class="bn">সমৃদ্ধ টুলকিট</span>
+                    </h3>
+                    <p>
+                        <span class="en">Comprehensive tools for data management, translation, and evaluation</span>
+                        <span class="bn">ডেটা ব্যবস্থাপনা, অনুবাদ এবং মূল্যায়নের জন্য ব্যাপক সরঞ্জাম</span>
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>
+                        <span class="en">Safe & Reliable</span>
+                        <span class="bn">নিরাপদ এবং নির্ভরযোগ্য</span>
+                    </h3>
+                    <p>
+                        <span class="en">Rigorous safety benchmarks and quality assurance</span>
+                        <span class="bn">কঠোর নিরাপত্তা বেঞ্চমার্ক এবং গুণমান নিশ্চিতকরণ</span>
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>
+                        <span class="en">Easy Integration</span>
+                        <span class="bn">সহজ একীকরণ</span>
+                    </h3>
+                    <p>
+                        <span class="en">Simple APIs and documentation for seamless integration</span>
+                        <span class="bn">নির্বিঘ্ন একীকরণের জন্য সহজ এপিআই এবং ডকুমেন্টেশন</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>
+                        <span class="en">About BanglaLLM</span>
+                        <span class="bn">BanglaLLM সম্পর্কে</span>
+                    </h4>
+                    <p>
+                        <span class="en">A research lab dedicated to advancing Bangla language technology and AI</span>
+                        <span class="bn">বাংলা ভাষা প্রযুক্তি এবং এআই উন্নত করতে নিবেদিত একটি গবেষণা ল্যাব</span>
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>
+                        <span class="en">Quick Links</span>
+                        <span class="bn">দ্রুত লিংক</span>
+                    </h4>
+                    <ul>
+                        <li><a href="https://github.com/BanglaLLM" target="_blank">
+                            <span class="en">GitHub</span>
+                            <span class="bn">গিটহাব</span>
+                        </a></li>
+                        <li><a href="https://github.com/BanglaLLM/banglallm.github.io" target="_blank">
+                            <span class="en">Official Website</span>
+                            <span class="bn">অফিসিয়াল ওয়েবসাইট</span>
+                        </a></li>
+                        <li><a href="https://github.com/BanglaLLM" target="_blank">
+                            <span class="en">Documentation</span>
+                            <span class="bn">ডকুমেন্টেশন</span>
+                        </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>
+                        <span class="en">Contact</span>
+                        <span class="bn">যোগাযোগ</span>
+                    </h4>
+                    <p>
+                        <span class="en">Email: <a href="mailto:info@banglallm.org">info@banglallm.org</a></span>
+                        <span class="bn">ইমেইল: <a href="mailto:info@banglallm.org">info@banglallm.org</a></span>
+                    </p>
+                    <p>
+                        <span class="en">Follow us on:</span>
+                        <span class="bn">আমাদের অনুসরণ করুন:</span>
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/BanglaLLM" target="_blank" class="social-icon">GitHub</a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    <span class="en">&copy; 2024 BanglaLLM. All rights reserved. | Made with ❤️ for Bangla AI</span>
+                    <span class="bn">&copy; 2024 BanglaLLM। সর্বাধিকার সংরক্ষিত। | বাংলা এআইর জন্য ❤️ দিয়ে তৈরি</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
